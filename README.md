@@ -65,6 +65,10 @@ cloudformation.createStack(options.value(), function(err) {
 
 ```
 
+Keep in mind that Parameters are specific to your CloudFormation template!
+The Parameters used in this example are *plausible* but your template may
+not have them!
+
 ## API
 
 ### var options = new OptionsBuilder(baseOptions);
