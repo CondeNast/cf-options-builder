@@ -8,7 +8,7 @@ as adding and removing Capabilities and setting standard properties.
 For example:
 
 ```js
-
+var AWS = require('aws');
 var Builder = require('cf-options-builder');
 
 var options = new Builder({
@@ -26,6 +26,7 @@ options
   .setCapability('CAPABILITY_IAM')
 ;
 
+// Here's what it looks like...
 console.log(options.value());
 /*
 {
@@ -50,6 +51,18 @@ console.log(options.value());
   ]
 }
 */
+
+// ...and this is how you use it with AWS
+AWS.config.credentials = new AWS.SharedIniFileCredentials({ profile: 'my-profile' });
+
+var cloudformation = new AWS.CloudFormation();
+
+cloudformation.createStack(options.value(), function(err) {
+  if (err) {
+    throw err;
+  }
+});
+
 ```
 
 ## API
