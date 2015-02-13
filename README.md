@@ -122,4 +122,4 @@ $ npm test
 
 ## License
 
-All rights reserved.
+MIT/X11.
