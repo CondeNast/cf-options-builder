@@ -33,8 +33,5 @@
     "chai": "1.10.0",
     "jshint": "2.6.0",
     "mocha": "2.1.0"
-  },
-  "publishConfig": {
-    "registry": "https://condenast.registry.nodejitsu.com"
   }
 }
