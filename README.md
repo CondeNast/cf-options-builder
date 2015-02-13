@@ -1,6 +1,7 @@
 # cf-options-builder
 
 [ ![Codeship Status for CondeNast/cf-options-builder](https://codeship.com/projects/43ef4020-9605-0132-d9a0-7618256095d7/status?branch=master)](https://codeship/.com/projects/62981)
+[![Code Climate](https://codeclimate.com/repos/54de88576956803d84007704/badges/851b3954bd772a1d1fea/gpa.svg)](https://codeclimate.com/repos/54de88576956803d84007704/feed)
 
 This is a builder for CloudFormation options objects, which get passed to
 calls to the `createStack` method of the official AWS CloudFormation api
